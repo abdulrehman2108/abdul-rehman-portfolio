@@ -1,0 +1,30 @@
+:focus-visible {
+  outline: 3px solid #0a796d;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .hero-actions,
+  .contact-section,
+  .site-footer,
+  .project-links,
+  .case-actions {
+    display: none !important;
+  }
+
+  body { background: #fff; }
+  .content-section, .hero-section, .case-main { padding: 24px 0; }
+  .project-card, .education-card, .skill-group { break-inside: avoid; }
+}

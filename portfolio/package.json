@@ -1,0 +1,11 @@
+{
+  "name": "abdul-rehman-ansari-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node -e \"eval(require('node:fs').readFileSync('./scripts/build-runner.js','utf8'))\"",
+    "test": "node -e \"eval(require('node:fs').readFileSync('./scripts/test-runner.js','utf8'))\"",
+    "start": "node -e \"eval(require('node:fs').readFileSync('./scripts/serve-runner.js','utf8'))\""
+  }
+}
